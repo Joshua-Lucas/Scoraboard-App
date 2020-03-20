@@ -7,9 +7,11 @@ import Stats from './Stats';
 const Header = ({title}) => {
 
     return(
-        <div className="bg-purple-500">
-            <Stats/> 
-            <div className="flex justify-center flex-grow " >
+        <div className=" rounded bg-purple-500 flex w-full ">
+            <div className="flex justify-center" >
+                <Stats/>
+            </div> 
+            <div className="flex  flex-1 justify-center" >
                 <h1 className="text-4xl">{title}</h1>
             </div>
         </div>
