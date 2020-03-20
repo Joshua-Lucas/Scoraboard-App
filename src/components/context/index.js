@@ -7,7 +7,13 @@ export class Provider extends Component
 {
 
     state = {
-        players: []
+        players: [
+            {
+                name: 'Example',
+                score: 0,
+                id: 1
+            }
+        ]
     };
 
     render(){

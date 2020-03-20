@@ -15,7 +15,7 @@ const Stats = () => {
             
             return(
                 <div className="m-auto p-4">
-                    <p>Players: {totalPlayers}</p>
+                    <p> Players: {totalPlayers}</p>
                 </div>
             );
         }}
