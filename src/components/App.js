@@ -7,7 +7,7 @@ import Playerlist from './Playerlist';
 const App = () => {
 
     return (
-      <div className=" rounded-lg flex flex-col items-center w-full h-full ">
+      <div className=" flex flex-col items-center w-full h-full ">
         <Header/>
         <Playerlist/>
       </div>

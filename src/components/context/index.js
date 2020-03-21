@@ -12,6 +12,11 @@ export class Provider extends Component
                 name: 'Example',
                 score: 0,
                 id: 1
+            },
+            {
+                name: 'John',
+                score: 0,
+                id: 2
             }
         ]
     };
