@@ -27,12 +27,23 @@ export class Provider extends Component
 
 // Event Handler Functions
 
-    handleScoreChange = (index,input) => {
+    // Players List Component
+
+    handleRemovePlayer = (id) => {
         this.setState(prevState => ({
-            score: prevState.players[index].score += input
+
+            players: prevState.players.filter(p => p.id !== id)
+
         }));
     }
 
+    handleScoreChange = (index,input) => {
+        this.setState(prevState => ({
+            score: prevState.players[index].score += parseInt(input)
+        }));
+    }
+
+    // Add Player Component
     handleAddPlayer = (name) => {
         this.setState(prevState => {
             return {
@@ -54,6 +65,7 @@ export class Provider extends Component
             <CardScoreboardContext.Provider value={{
                 players: this.state.players,
                 actions: {
+                    removePlayer: this.handleRemovePlayer,
                     changeScore: this.handleScoreChange,
                     addPlayer: this.handleAddPlayer
                 }
