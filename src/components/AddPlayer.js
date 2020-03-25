@@ -18,9 +18,9 @@ class AddPlayer extends Component {
   
     render() {
       return (
-        <form className=" rounded-b bg-purple-500 flex justify-around w-full "onSubmit={this.handleSubmit}>
+        <form className=" rounded-b bg-blue-500 flex justify-around w-full "onSubmit={this.handleSubmit}>
           <input 
-            className="bg-purple-800 rounded w-4/5 m-4 p-2" 
+            className="bg-blue-800 rounded w-4/5 m-4 p-2" 
             type="text"
             value={this.state.value}
             onChange={this.handleValueChange}
