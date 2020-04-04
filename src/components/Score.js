@@ -28,8 +28,8 @@ class Score extends Component
                    
                    return (
                     
-                        <form className="mr-5" onSubmit={handleSubmit} >
-                            <input className="text-center text-2xl placeholder-black" type="text"  
+                        <form className="flex justify-center sm:flex-none sm:mr-5" onSubmit={handleSubmit} >
+                            <input className="w-3/5 text-center text-2xl placeholder-black sm:w-full" type="text"  
                             value={this.state.value} 
                             onChange={this.handleChange} 
                             placeholder={players[this.props.index].score}/>
