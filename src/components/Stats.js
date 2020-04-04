@@ -14,7 +14,7 @@ const Stats = () => {
             const totalPlayers = context.players.length;
             
             return(
-                <div className="m-auto p-4">
+                <div className="m-auto sm:p-4">
                     <p> Players: {totalPlayers}</p>
                 </div>
             );
