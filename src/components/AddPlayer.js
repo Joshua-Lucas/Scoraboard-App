@@ -17,16 +17,16 @@ const AddPlayer = () =>{
                   }
                 
                 return (
-                    <form className=" rounded-b bg-blue-500 flex justify-around w-full "onSubmit={handleSubmit}>
+                    <form className=" mt-1 rounded-b bg-blue-500 flex flex-col items-center md:flex-row md:justify-around w-full "onSubmit={handleSubmit}>
                         <input 
-                            className="bg-blue-700 rounded w-4/5 m-4 p-2" 
+                            className="w-4/5 m-2 py-2 bg-blue-700 rounded focus:bg-gray-300 md:m-4 md:p-2" 
                             type="text"
                             ref={playerInput}
                             placeholder="Enter a player's name"
                         />
                         
                         <input 
-                            className ="w-1/5 rounded m-4 py-2"
+                            className =" mb-2 py-2 w-4/5 rounded hover:bg-gray-300 hover:font-medium cursor-pointer md:w-1/5 md:m-4 md:py-2"
                             type="submit"
                             value="Add Player"
                         />
