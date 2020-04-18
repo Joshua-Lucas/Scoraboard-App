@@ -38,9 +38,9 @@ export class Provider extends Component
     }
 
     handleScoreChange = (index,input) => {
-        this.setState(prevState => ({
+            this.setState(prevState => ({
             score: prevState.players[index].score += parseInt(input)
-        }));
+            }));
     }
 
     // Add Player Component
